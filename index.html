@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>School Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar-inverse" style="position:sticky;top:0;z-index:99999">
+
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand" href="#">
+              <img src="school photo web.jpg" alt="Official logo" class="img-circle " width="35px" height="35px" >
+          </a>
+        </div>
+        
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="#campus_life">CAMPUS</a></li>
+            <li><a href="#achievements">ACHIEVEMENT</a></li>
+            <li><a href="#new">WHATS NEW</a></li>
+            <li><a href="#alumni">ALUMNI</a></li>
+            <li><a href="#contactUs">CONTACT US</a></li>
+          </ul>
+        </div>
+    
+    </nav>
+      
+
+    <div class="announcement">
+        <marquee id="marqueeStyle" onmouseover="this.stop();" onmouseout="this.start();">
+        ***  Feel free to ask queries on stmaryconventschoolgzp@gmail.com  ***
+        </marquee>
+      </div>
+      <img src="school photo web.jpg" id="school">
+      
+    <!--Assuming "Menu with Marquee" and "Contact Us" has been completed in Project 68 -->
+
+    <div class="container">
+        <!--Campus Life-->
+        <div class="page-header" id="campus_life">
+            <h2 class="text-capitalize">Campus Life</h2>
+
+            <div class="row">
+                <!--1st Campus Life-->
+                <div class="travel_mainDiv">
+                    <img class="img-responsive" src="library web.jpg">
+                    <h4 class="text-capitalize"><kbd>school library</kbd></h4>
+                    <hr>
+                    <h5 class="text-success text-left text-capitalize">was built in 2015</h5>
+                    <p class="text-muted text-left">We visit every saturday to the library , and read a any kind of book of your choice, i like novels and my fav novel is arthla .</p>
+                </div>
+                <!--2nd Campus Life-->
+                <div class="travel_mainDiv">
+                    <!--Give appropriate class below for the image img-responsive-->
+                    <img class="img-responsive" src="Phy_1.jpg">
+                    <h4 class="text-capitalize"><kbd>physics lab</kbd></h4>
+                    <hr>
+                    <!--Give classes below text-success text-left-->
+                    <h5 class="text-capitalize text-success text-left">Was built in 2000</h5>
+                    <p class="text-muted text-left">we do experiments , activities in the physics lab.</p>
+
+                </div>
+                <!--3rd Campus life-->
+                <div class="travel_mainDiv">
+                    <img class="img-responsive" src="Comp_1.jpg">
+                    <!-- Give text-capitalize below to make the first letters in Capitals-->
+                    <h4 class="text-capitalize"><kbd>computer lab</kbd></h4>
+                    <hr>
+                    <h5 class="text-success text-left text-capitalize">Was built in 1995</h5>
+                    <!-- Give text-muted below to show the text in grey color-->
+                    <p class="text-left text-muted">Computer labs provide a time and space to develop skills not directly related to classroom curriculum. These skills can be first learned in the lab. Then mastered through ongoing application at home and in the classroom.</p>
+                </div>
+
+            </div>
+        </div>
+        <!--Achievements-->
+        <div class="page-header" id="achievements">
+            <h2 class="text-capitalize">school achievements</h2>
+        </div>
+        <div class="bg-primary movie_head" data-toggle="collapse" data-target="#school_achievement1">
+            Inter School Debate On Environment Pollution <i class="fa fa-sort-desc"></i>
+        </div>
+        <!--1st Achievement-->
+        <div id="school_achievement1" class="collapse">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="achievementsID">
+                <img src="https://i.postimg.cc/KztDSHbx/se1.jpg" class="img-responsive img-thumbnail">
+            </div>
+
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 movie_text">
+                <h5 class="text-success text-left text-capitalize">Won first prize in inter school debate on traffic signals
+                </h5>
+                <p>We debate to the traffic police and talked to them of our traffic signals in city etc.</p>
+            </div>
+        </div>
+        <!--2nd Achievement-->
+        <div class="bg-primary movie_head" data-toggle="collapse" data-target="#school_achievement2">
+            Inter School Football Competition<i class="fa fa-sort-desc"></i>
+        </div>
+
+        <div id="school_achievement2" class="collapse">
+
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="achievementsID">
+                
+                <img src="https://i.postimg.cc/sxcP1G1L/sm2.jpg" class="img-responsive img-thumbnail">
+            </div>
+            
+            <div class="movie_text col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                <h5 class="text-success text-left text-capitalize">Came second in inter school football competition
+                </h5>
+                <p>That was a very interesting match with our oppenents ... but we loss it with 2-3.</p>
+            </div>
+        </div>
+
+        <!--3rd Achievement--->
+
+        <div class="bg-primary  movie_head" data-toggle="collapse" data-target="#school_achievement3">
+            Inter School Science Project Competition<i class="fa fa-sort-desc"></i>
+        </div>
+
+        <div id="school_achievement3" class="collapse">
+            <!-- Add bootstrap col-lg-3 col-md-3 col-sm-3 col-xs-12-->
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="achievementsID">
+                <img src="https://i.postimg.cc/zXzS67cY/sm3.jpg" class="img-responsive img-thumbnail">
+            </div>
+
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 movie_text">
+              <h5 class="text-left text-success text-capitalize">Won second price in inter school Science Project competition
+                </h5>
+                <p>We Maded a remote control drone with specific features!!</p>
+            </div>
+        </div>
+
+    </div>
+    <div id="footer"></div>
+
+    <div class="page-header col-lg-12 col-md-12 col-sm-12 col-xs-12" id="new">
+        <h2 class="text-capitalize">Classes</h2>
+    </div>
+
+    <ul class="list-group">
+        <li class="list-group-item list-group-item-success col-lg-12 col-md-12 col-sm-12 col-xs-12 environment_li">
+            <h4>New Classes</h4>
+            <img src="class.jpg" class="img-responsive col-lg-5 col-md-5 col-sm-5 col-xs-12" >
+            <p class="list-group-item-text col-lg-7 col-md-7 col-sm-7 col-xs-12" >
+                Recently, our school is extended to standard  9th and 10th and 11th and 12th will also be built in near future. our school provide qualtiy based education, laboratary practices, co-carricular activities and more on.further the students here are sharp minded faciliating a competetive enviornment in the campus.
+            </p>
+        </li>
+    </ul>
+
+    <ul class="list-group">
+        <li class="list-group-item list-group-item-warning col-lg-12 col-md-12 col-sm-12 col-xs-12 environment_li">
+            <h4>Online Education</h4>
+            <img src="class.jpg" class="img-responsive col-lg-5 col-md-5 col-sm-5 col-xs-12" >
+            <p class="list-group-item-text col-lg-7 col-md-7 col-sm-7 col-xs-12" >
+               1- Attending online classes everyday has become the ‘new normal’ for students during the lockdown in India. As schools were shut because of the lockdown to contain the spread of coronavirus, online class have taken centre stage in students’ life now.<br>
+               2- Despite the lockdown, many schools have taken timely steps to continue the flow of education by holding online classes for students. Interestingly, these online classes have helped students during lockdown more than ever before. Here’s how. <br>
+               3- They don’t need to run to school daily. They can study and learn at the cosy ambience of their home and submit their assignments online. In online classes, there is less physical activity and more mental activity which makes students more academic oriented. <br>
+               4- Another positive effect of online education is students have become more tech-savvy. They got to know more about various apps and programs. Apart from academic learning, there is so much of technological learning happening in students during lockdown. Their knowledge about computers, smartphone/mobile phone, radio and television are getting enhanced.<br>
+               5- Online student feedback is limited<br>
+               6- E-Learning can cause social Isolation<br>
+               7- E-Learning requires strong self-motivation and time management skills<br>
+               8- Lack of communicational skill development in online students<br>
+               9- Cheating prevention during online assessments is complicated<br>
+            </p>
+        </li>
+    </ul>
+
+    <div class="page-header col-lg-12 col-md-12 col-sm-12 col-xs-12" id="alumni" >
+        <h2 class="text-capitalize">Our Alumni</h2>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 book" data-toggle="modal" data-target="#school_alumni1">
+        <img src="871900-carryminati-093019.jpg" class="img-responsive">
+        <hr>
+        <p class="text-primary">Carryminati</p>
+      </div>
+
+      <div class="modal fade" id="school_alumni1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Carryminati</h4>
+            </div>
+            <div class="modal-body">
+              <img src="871900-carryminati-093019.jpg" class="img-responsive img-modal">
+              <p class="img_modal">He is a very Famous Indian Youtuber with 30 million subscriber!
+                <br>
+                <a href="https://en.wikipedia.org/wiki/CarryMinati">
+                <b>To know more</b>
+              </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 book" data-toggle="modal" data-target="#school_alumni2">
+        <img src="1604222690_screenshot_20201101-144806_chrome_copy_1200x800.webp" class="img-responsive">
+        <hr>
+        <p class="text-primary">Bhuvan Bam</p>
+      </div>
+
+      <div class="modal fade" id="school_alumni2">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Bhuvan Bam</h4>
+            </div>
+            <div class="modal-body">
+              <img src="1604222690_screenshot_20201101-144806_chrome_copy_1200x800.webp" class="img-responsive img-modal">
+              <p class="img_modal">He is a very Famous Youtuber with a huge subscriber family of 25 million!.
+                <br>
+                <a href="https://en.wikipedia.org/wiki/Bhuvan_Bam">
+                <b>To know more</b>
+              </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 book" data-toggle="modal" data-target="#school_alumni3">
+        <img src="download (3).jpg" class="img-responsive">
+        <hr>
+        <p class="text-primary">Mukesh Ambani</p>
+      </div>
+
+      <div class="modal fade" id="school_alumni3">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Mukesh Ambani</h4>
+            </div>
+            <div class="modal-body">
+              <img src="download (3).jpg" class="img-responsive img-modal">
+              <p class="img_modal">He is 8th richest man in the world.
+                <br>
+                <a href="https://en.wikipedia.org/wiki/Mukesh_Ambani">
+                <b>To know more</b>
+              </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 book" data-toggle="modal" data-target="#school_alumni4">
+        <img src="Akshay_Kumar_at_Star_Guild_Awards.jpg" class="img-responsive">
+        <hr>
+        <p class="text-primary">Akshay Kumar</p>
+      </div>
+
+      <div class="modal fade" id="school_alumni4">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Akshay Kumar</h4>
+            </div>
+            <div class="modal-body">
+              <img src="Akshay_Kumar_at_Star_Guild_Awards.jpg" class="img-responsive img-modal">
+              <p class="img_modal">He is an Indian Actor.
+                <br>
+                <a href="https://en.wikipedia.org/wiki/Akshay_Kumar">
+                <b>To know more</b>
+              </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div class="container">
+        <div class="page-header col-lg-12 col-md-12 col-sm-12 col-xs-12" id="contactUs">
+        <h2 class="text-capitalize">Contact US</h2>
+        </div>
+
+        <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1069.9599725746598!2d83.56396753871462!3d25.574926279773422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3991ff0ec8601909%3A0x6295ba69625a0bd1!2sSt%20Mary&#39;s%20Convent%20School%20Tulsipur%20Ghazipur!5e0!3m2!1sen!2sin!4v1625413077521!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div id="details">
+            <img src="download.jpg" class="img-responsive img-circle col-lg-3 col-md-3 col-lg-sm-3 col-xs-9" >
+        <h2>Principal Name:</h2>
+      <h3>Mrs.Jamila Selvanayagam</h3>
+      <div class="contact_1">
+     <a href="mailto:stmaryconventschool@gmail.com?Subject=Hi">
+       <h5><i class="fa fa-envelope"></i>&nbsp;&nbsp;stmaryconventschool@gmail.com</h5>
+     </a>
+     <a href="#">
+       <h5><i class="fa fa-instagram"></i>&nbsp;&nbsp;schoolID</h5>
+     </a>
+     <a href="#">
+       <h5><i class="fa fa-phone-square"></i>&nbsp;&nbsp;1234567891</h5>
+     </a>
+      </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
